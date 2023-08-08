@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}SMS Alert Service{% endblock %}
+
+{% block content %}
+<html>
+
+<head>
+    <link href="../static/style/style.css" rel="stylesheet">
+    <script src="../static/js/accountUpdate.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+
+<div class="container">
+    <div class="content-block full-size-form-container">
+        <h4>Edit Account Details</h4>
+        <form class="full-size-form">
+            <p class="status-message" id="editInfoStatusMessage"><!-- Dynamic JS Status Message --></p>
+            <h5><label for="NewUsername">Update Username</label></h5>
+            <p>"{{ username }}"</p>
+            <input id="newUsernameField" name="newusername" placeholder="New Username">
+            <button id="updateUsernameButton" class="blue" type="button"><span>Submit</span></button>
+        </form>
+        <br/><br/>
+        <form class="full-size-form">
+        <h5>Update Phone Number</h5>
+        <p>{{ current_phone }}</p>
+        <p>If you need to change your phone number, <br />please contact
+            <strong>support@smsalertservice.com</strong>
+        </p></form>
+    </div>
+</div>
+
+</html>
+{% endblock %}

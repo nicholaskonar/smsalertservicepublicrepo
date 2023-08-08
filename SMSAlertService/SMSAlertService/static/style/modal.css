@@ -1,0 +1,138 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  margin: 0 auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.icon-container,
+.title-container,
+.close-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-container {
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-container h3 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.fa {
+    font-size: 2rem;
+}
+
+.close-modal-button {
+  color: #aaa;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.close-modal-button:hover,
+.close-modal-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .modal h3 {
+    font-size: 1.3rem;
+    }
+
+    .fa {
+        font-size: 1.5rem;
+    }
+}
+
+.auth-container {
+  margin: auto;
+  padding: 10%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container label {
+  margin-bottom: 10px;
+}
+
+.auth-container input {    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+}
+
+.auth-container button {
+    margin: 5px 0px;
+}
+
+.modalBody {
+  text-align: center;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px;
+}
+
+.checkout .checkout-item {
+  flex-direction: row;
+}
+
+.checkout h5 {
+  margin: 25px 0px;
+}
+
+.checkout input label{
+  display: flex;
+}
+
+.checkout-items-container {
+  text-align: left;
+  margin: 0px auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+

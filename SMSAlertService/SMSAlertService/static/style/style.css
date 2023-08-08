@@ -1,0 +1,359 @@
+.content-block {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0px solid #aaa;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .content-block {
+    padding: 10px;
+  }
+}
+
+.content-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.full-size-form-container {
+  padding: 50px 25px;
+  margin: auto;
+  max-width: 800px;
+}
+
+.full-size-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.full-size-form input {
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.full-size-form button {
+  margin: 15px 0px;
+}
+
+.notice {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.notice a, .notice p {
+  margin: 0;
+  color: #fff;
+}
+
+/* Account */
+.info-center {
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* .info-item {
+} */
+
+.account-dashboard {
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;;
+  grid-gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  .account-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-item {
+  width: 100%;
+  align-self: start;
+}
+
+/* Common format for all buttons */
+button {
+  position: relative;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border-width: 0px;
+}
+
+/* Separate text from background for hover effect */
+button span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Add transparent overlay */
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 0;
+}
+
+/* Darken overlay on hover */
+button:hover::after {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+#deleteAllKeywordsButton {
+  margin: 15px 0px;
+}
+
+.blue {
+  background-color: #007bff;
+  /* Blue */
+}
+
+.red {
+  background-color: #f44336;
+  /* Red */
+}
+
+.green {
+  background-color: #34A853;
+  /* Green */
+}
+
+.subreddits {
+  margin: 10px 0px;
+  list-style-type: none;
+  word-wrap: break-word;
+  text-align: left;
+  width: 100%;
+}
+
+.subreddits li {
+  margin: 10px 0px;
+}
+
+.subreddits label {
+  margin-right: 10px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: vertical;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-bottom: 5vh;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0px solid #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-heading {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  background: #009FBB;
+  color: #fff;
+  width: 100%;
+}
+
+.card .card-heading h5 {
+  font-size: clamp(12px, 4vw, 24px);
+  align-self: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  margin: 0;
+}
+
+.card .card-body ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  text-align: left;
+}
+
+#keywords {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+td {
+  align-self: center;
+  justify-content: center;
+}
+
+td:nth-child(odd) {
+  overflow: hidden;
+}
+
+td:nth-child(even) {
+  margin-left: auto;
+}
+
+.delete-keyword-btn {
+  color: #fff;
+  aspect-ratio: 1 / 1;
+  max-width: 36px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: left;
+  margin-right: auto;
+}
+
+.checkbox-container input {
+  padding: 0;
+  margin: 0 5px;
+}
+
+.checkbox-container label {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  display: inline;
+  color: grey;
+}
+
+.status-message {
+  color: #fff;
+  margin: 25px 0px;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .status-message {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .status-message {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .status-message {
+    font-size: 0.7rem;
+  }
+}

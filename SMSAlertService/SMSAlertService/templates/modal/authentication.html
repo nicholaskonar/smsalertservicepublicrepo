@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/style/modal.css" rel="stylesheet">
+    <script src="static/js/authenticationModal.js"></script>
+</head>
+<body>
+<div class="modal" id="challengeModal">
+    <div class="modal-header">
+        <div class="icon-container">
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div class="title-container">
+            <h3>Account Verification</h3>
+        </div>
+        <div class="close-button-container">
+            <span class="close-modal-button" id="closeChallengeButton">&times;</span>
+        </div>
+    </div>
+    <div class="auth-container">
+        <p>We need to send you a Verification Code to confirm your account.</p>
+        <form id="challengeForm">
+            <label for="modalPhoneNumberInputField">Phone Number:</label>
+            <input id="modalPhoneNumberInputField"
+                   name="modalPhoneNumberInputField"
+                   pattern="[0-9]{10}"
+                   placeholder="No spaces or dashes"
+                   required="required"
+                   type="tel">
+            <button class="green" id="sendCodeButton" type="button"><span>Send Code</span></button>
+            <p class="status-message" id="challengeStatusMessage"><!-- Dynamic JS status message --></p>
+        </form>
+    </div>
+</div>
+
+<div class="modal" id="validateModal">
+    <div class="modal-header">
+        <div class="icon-container">
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div class="title-container">
+            <h3>Account Verification</h3>
+        </div>
+        <div class="close-button-container">
+            <span class="close-modal-button" id="closeValidateButton">&times;</span>
+        </div>
+    </div>
+    <div class="auth-container">
+        <p>Enter your Verification Code below to continue.</p>
+        <form id="validateForm">
+            <label for="verificationCode">Verification Code:</label>
+            <input id="verificationCode"
+                   name="verificationCode"
+                   required="required"
+                   type="tel">
+            <button class="blue" id="validateButton" type="button"><span>Confirm</span></button>
+            <button class="green" id="resendCodeButton" type="button"><span>Resend Code</span></button>
+            <p class="status-message" id="validateStatusMessage"><!-- Dynamic JS status message --></p>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

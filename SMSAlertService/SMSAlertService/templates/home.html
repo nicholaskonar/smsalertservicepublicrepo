@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <link href="static/style/style.css" rel="stylesheet">
+    <script src="/static/js/home.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="utf-8">
+</head>
+
+<section class="front-page">
+    <div class="front-page-content">
+        <h3>Welcome to the</h3>
+        <h1>SMS Alert Service</h1>
+        <p>Never miss a deal on Reddit again</p>
+        <button type="button" id="createAccountButton">Create an Account</button>
+    </div>
+    <section class="blender"></section>
+</section>
+
+<div class="container">
+    <!--
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Warning: </strong>This service gives you an unfair advantage over other buyers. Using it for profit is
+            discouraged.
+        </div>
+    -->
+    <div class="card">
+        <div class="card-heading">
+            <h5><strong>First dibs on everything.</strong></h5>
+        </div>
+        <div class="card-body">
+            <p>The SMS Alert Service is a powerful web tool that continuously scans whatever buy/sell/trade subreddits
+                you want,
+                and alerts you (via SMS) the instant an item you're looking for is
+                posted for sale.</p>
+            <p>If you're hunting for the hottest deals and the rarest items,
+                the SMS Alert Service gives you an edge that normal users simply can't compete with.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-heading">
+            <h5><strong>Automation, personalized.</strong></h5>
+        </div>
+        <div class="card-body">
+            <p>Unlock the power of being everywhere, all the time. What can you achieve with your new personal assistant?</p>
+            <ul>
+                <li>Beat other buyers to the punch and score the best deals.</li>
+                <li>Be the first to know when hard to find items pop up.</li>
+                <li>Don't rely on luck to find that special something before it's sold.</li>
+                <li>No more hours wasted searching Reddit the old fashioned way.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-heading">
+            <h5><strong>Pricing.</strong></h5>
+        </div>
+        <div class="card-body">
+            <p>If the service could be free, it would be. We charge the lowest possible price we can to cover
+                the costs of sending each alert.</p>
+            <p>Alert packages come in 3 sizes:</p>
+            <ul>
+                <li>$5.00 - 50 Alerts</li>
+                <li>$10.00 - 125 Alerts</li>
+                <li>$15.00 - 250 Alerts</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</html>
+{% endblock %}
